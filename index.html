@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laune – Gedicht</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .poem {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            white-space: pre-wrap; /* Behält Zeilenumbrüche bei */
+            margin-bottom: 2rem;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 1rem;
+        }
+        .artist {
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="poem">
+            
+you were my first, 
+started my thirst,  
+brought me to my worst, 
+then I left you cursed. 
+
+you reappear, 
+in every tear, 
+near, but you’re not here,
+it’s over, I fear. 
+          
+I see the others dance,
+watch you and her in trance, 
+I didn’t get romance,
+I wasn’t worth your chance.
+
+if I were doing good,
+you’d be a bitter taste, 
+although from where I stood, 
+I swallowed you with grace. 
+          
+first fall - at sight - not right - 
+first time, I felt so small.
+
+first free my heart from rust,  
+then break it with one thrust,
+can't stop to think of us, 
+all that it never was. 
+
+first one I gave my trust, 
+I let you break the crust, 
+when all you felt was lust,
+looked at me with disgust. 
+
+          
+worry -
+
+when you first touched my skin,
+my forehead on your chin.
+
+hurry -
+
+as if I were a sin, 
+shouldn’t have let you in. 
+
+your eyes wandered around, 
+in them I was lost and found,
+together we almost drowned, 
+now stand on desert ground.
+          
+first fall - a bite - I fight - 
+withdrawal, miss your call, build a wall. 
+
+first free my heart from rust, 
+then break it with one thrust,
+can't stop to think of us, 
+all that it never was.
+
+first time I know I must,
+let time turn us to dust,
+I did live by your laws - believing every clause,
+saw fingers in your claws. 
+          
+never meant to break me, 
+but more time that we spend,
+still called it a moment, 
+while you called it the end. 
+
+from present to the past, 
+from nothing left to ask, 
+from go - to stop, too fast, 
+from our first time to last.
+
+          
+first fall - at night - no light - 
+stand tall, first reason for it all.
+
+first free my heart from rust, 
+then break it with one thrust,
+can't stand to think of us, 
+all that it never was.
+
+when we came to a pause, 
+you went out with applause,
+you’re leaving without cause, 
+complaining without flaws.
+          
+first touch -
+
+I wanted to believe, 
+you might call me naive,
+I was sitting in grief,
+now I stand up to leave. 
+
+you don’t belong with me, 
+I’m done with misery,
+you live, I let you be, 
+after all it set me free.
+          
+firstly, I waited.
+finally, I walked.
+
+            Zeile für Zeile.
+            Mit Zeilenumbrüchen.
+        </div>
+        <div class="meta">
+            <p class="artist">Laune</p>
+            <p>Veröffentlicht am <span id="date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Datum automatisch auf den heutigen Tag setzen (z. B. "22. November 2026")
+        const dateElement = document.getElementById('date');
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        dateElement.textContent = today.toLocaleDateString('de-DE', options);
+    </script>
+</body>
+</html>
