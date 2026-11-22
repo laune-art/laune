@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laune – Gedicht</title>
+    <title>Laune – 22</title>
     <style>
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,7 +23,7 @@
         .poem {
             font-size: 1.2rem;
             line-height: 1.8;
-            white-space: pre-wrap; /* Behält Zeilenumbrüche bei */
+            white-space: pre-wrap;
             margin-bottom: 2rem;
         }
         .meta {
@@ -31,17 +31,27 @@
             color: #666;
             border-top: 1px solid #ddd;
             padding-top: 1rem;
+            line-height: 1.6;
         }
         .artist {
             font-weight: bold;
             color: #000;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        .album {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .date {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="poem">
-            
+          
 you were my first, 
 started my thirst,  
 brought me to my worst, 
@@ -74,7 +84,6 @@ first one I gave my trust,
 I let you break the crust, 
 when all you felt was lust,
 looked at me with disgust. 
-
           
 worry -
 
@@ -114,7 +123,6 @@ from nothing left to ask,
 from go - to stop, too fast, 
 from our first time to last.
 
-          
 first fall - at night - no light - 
 stand tall, first reason for it all.
 
@@ -143,21 +151,12 @@ after all it set me free.
 firstly, I waited.
 finally, I walked.
 
-            Zeile für Zeile.
-            Mit Zeilenumbrüchen.
         </div>
         <div class="meta">
             <p class="artist">Laune</p>
-            <p>Veröffentlicht am <span id="date"></span></p>
+            <p class="album">Album: 22</p>
+            <p class="date">Veröffentlicht am 23. November 2026 um 11:22 Uhr</p>
         </div>
     </div>
-
-    <script>
-        // Datum automatisch auf den heutigen Tag setzen (z. B. "22. November 2026")
-        const dateElement = document.getElementById('date');
-        const today = new Date();
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        dateElement.textContent = today.toLocaleDateString('de-DE', options);
-    </script>
 </body>
 </html>
